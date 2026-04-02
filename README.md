@@ -10,7 +10,7 @@
 | |__| | | |__| || |___ |   | | |    |  |     
  \_____|  \____/  \____||   |_||_|    |__|    
 
-  N · A · I · M  —  Network-Free Automated Iterative Meals
+  N · A · I · M  —  NAIM Automated Iterative Meals
 ```
 
 > *"Her iterasyon daha iyi bir sen."*  
