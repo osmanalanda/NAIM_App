@@ -1,146 +1,57 @@
-# 🏋️ NAIM Challenge
+# 🥗 NAIM Diet Planner
 
-![Naim Süleymanoğlu Cep Herkülü](assets/naim.jpeg)
-
-**Naim Agentic Iterative Mobile** — Küçük telefon, dev güç.
-
-> *"We don't build apps. We evolve them."*
-
----
-
-## What is NAIM?
-
-NAIM adapts the [Karpathy autoresearch loop](https://github.com/karpathy/autoresearch) for mobile app development. Instead of an AI agent optimizing ML training overnight, **you** are the agent iterating on a mobile app — one small feature per cycle.
-
-The autoresearch pattern has 3 primitives:
-1. **Editable asset** → your mobile app codebase
-2. **Scalar metric** → feature count (kg lifted)
-3. **Time-boxed cycle** → 15 min per iteration
-
-Each iteration = one "lift." You describe what you want, AI builds it, you test it, you log it. Repeat.
-
----
-
-## 🛠️ Toolchain
-
-| Tool | Role | Cost |
-|------|------|------|
-| [Google Stitch](https://stitch.withgoogle.com) | AI design canvas → UI mockups from text/voice | Free (350 gen/month) |
-| [Google Antigravity](https://antigravity.google/download) | Agent-first IDE → code generation from prompts | Free (rate-limited) |
-| [Stitch MCP](https://github.com/davideast/stitch-mcp) | Bridge: Stitch designs → Antigravity code | Free |
-| GitHub | Version control + iteration log | Free |
-
-**Alternative paths** (if Antigravity credits run out):
-- a0.dev → React Native component generation
-- Claude Code CLI → prompt-based code generation
-- Cursor → AI-enhanced editor
-
----
-
-## 🔁 The NAIM Loop
+![Naim Süleymanoğlu — Cep Herkülü](assets/naim.jpeg)
 
 ```
-┌─────────────────────────────────────────────┐
-│                                             │
-│   1. THINK   → What feature to add? (2 min)│
-│   2. DESIGN  → Stitch: voice/text → UI     │
-│   3. CODE    → Antigravity: implement       │
-│   4. TEST    → Does it work? Screenshot.    │
-│   5. LOG     → Write in MOBILE.md           │
-│   6. COMMIT  → Push to GitHub               │
-│                                             │
-│   ← Repeat (15 min per cycle) ←             │
-└─────────────────────────────────────────────┘
+  ______  _    _  _____  ___   _____  ______  
+ / _____|| |  | |/ ____||   | |  _  ||   _  | 
+| |  ____| |  | || |    |   | | |_| ||  |_| | 
+| | |_   | |  | || |    |---| |  ___||   ___/ 
+| |__| | | |__| || |___ |   | | |    |  |     
+ \_____|  \____/  \____||   |_||_|    |__|    
+
+  N · A · I · M  —  Network-Free Automated Iterative Meals
 ```
 
----
-
-## 🏋️ Weight System
-
-Every feature = weight (kg). Your app "lifts" more as it grows.
-
-| Feature | Weight |
-|---------|--------|
-| Basic UI screen | 5 kg |
-| Text input/output | 10 kg |
-| Image support | 10 kg |
-| Dark mode | 5 kg |
-| Navigation (multi-screen) | 15 kg |
-| API call (external data) | 20 kg |
-| Local storage / cache | 20 kg |
-| AI feature (chat, summary, etc.) | 25 kg |
-| Voice input | 15 kg |
-| Camera integration | 15 kg |
-| Custom animation | 10 kg |
-| Push notification (simulated) | 10 kg |
-| Search functionality | 10 kg |
-
-**Total lifted = sum of all features committed.**
+> *"Her iterasyon daha iyi bir sen."*  
+> Every iteration is a better you.
 
 ---
 
-## 🚀 Quick Start
+## What is NAIM Diet?
+
+**NAIM Diet** is a personalized, offline-first diet generation app built on React Native. It adheres to the GNU Free Software philosophy: maximum privacy, no tracking, and 100% local operation using `AsyncStorage`. No accounts, no clouds, just you and your device. 
+
+The app generates a full 7-day, 3-meals/day diet plan based on your physical goals and dietary preferences (e.g., Vegan, Vegetarian, Omnivore). 
+
+---
+
+## 🔄 The "Evolve" Loop (Iterative Dieting)
+
+The core feature of NAIM is the **Evolution Loop**:
+1. **Plan:** You receive a 7-day diet mapped exactly to your macro and calorie needs.
+2. **Rate:** You rate meals out of 5 stars based on how much you liked them.
+3. **Evolve:** Click **"Evolve to Iteration"** at the end of the week. NAIM analyzes your feedback, identifies any meals you rated poorly (2 stars or lower), replaces them with better alternatives, and generates your next week's plan (Iteration X+1).
+4. **Log:** Your past weeks' stats are saved securely in your Iteration Log in the Profile tab.
+
+A constantly adapting, privacy-respecting dieting engine.
+
+---
+
+## Tech Stack & Philosophy
+
+| Feature | Description |
+|---|---|
+| **Local-First** | Uses device `AsyncStorage`. Your health data never leaves your phone. |
+| **Philosophy** | GNU Free Software alignment. Total data ownership. |
+| **UI** | Glassmorphism, smooth animations, and dark-theme elegance. |
+| **Engine** | React Native + custom offline meal-generation engine. |
+
+### Quick Start
 
 ```bash
-# 1. Fork this repo
-# 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/naim.git
-cd naim
-
-# 3. Copy the template
-cp MOBILE.template.md MOBILE.md
-
-# 4. Open Stitch → design your first screen
-#    https://stitch.withgoogle.com
-
-# 5. Open Antigravity → build it
-#    https://antigravity.google/download
-
-# 6. Start iterating. Log everything in MOBILE.md.
-
-# 7. Commit format:
-git commit -m "[NAIM: YourCreativeName] Added text messaging - 10kg"
+cd GucApp
+npm install
+npx expo start
 ```
-
----
-
-## 📋 Deliverables
-
-1. **MOBILE.md** — Your iteration log (this is the grade)
-2. **Working app** — Screenshots or video proof per iteration
-3. **Total weight** — Sum of all features
-
----
-
-## 🏆 Awards
-
-| Award | Criteria |
-|-------|----------|
-| 🧠 Most Creative NAIM | Most original feature ideas |
-| ⚡ Fastest Lifter | Most iterations in shortest time |
-| 🏋️ Heaviest App | Highest total weight |
-| 🎯 Cleanest Loop | Best MOBILE.md documentation |
-| 🤖 Best AI Collaboration | Most effective AI tool usage |
-
----
-
-## 📚 References
-
-- [Karpathy autoresearch](https://github.com/karpathy/autoresearch) — The pattern that inspired NAIM
-- [Google Stitch](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/) — AI-native design canvas (updated March 19, 2026)
-- [Google Antigravity](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/) — Agent-first IDE
-- [Stitch MCP Server](https://github.com/davideast/stitch-mcp) — Design-to-code bridge
-- [Alibaba Page Agent](https://github.com/alibaba/page-agent) — In-page GUI agent (bonus exploration)
-
----
-
-## 🇹🇷 Neden NAIM?
-
-Naim Süleymanoğlu — "Cep Herkülü." Küçük ama efsane. 
-Tıpkı telefonunuzdaki uygulama gibi: küçük başlar, her iterasyonda büyür, sonunda dünya rekoru kırar.
-
-**NAIM = Naim Agentic Iterative Mobile**
-
----
-
-*AIgile Mobile — Dr. Nurettin Şenyer*
+*Built iteratively, adapting to you.*

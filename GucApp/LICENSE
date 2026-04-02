@@ -1,0 +1,41 @@
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2024  NAIM Contributors
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+───────────────────────────────────────────────────────────────────────────
+NAIM Diet Planner — Design Philosophy
+───────────────────────────────────────────────────────────────────────────
+
+This software embodies the following principles:
+
+1. LOCAL-FIRST — All user data (profile, meal plans, ratings, iteration
+   history) is stored exclusively via AsyncStorage on the user's own device.
+   No servers. No cloud. No databases outside the phone.
+
+2. ABSOLUTE PRIVACY — No analytics, no crash reporting, no ads, no telemetry.
+   The app does not request network permissions for user data. What happens
+   on your phone stays on your phone.
+
+3. SELF-EVOLVING (NAIM Philosophy) — The diet plan is not static. Through
+   the NAIM iterative loop, users rate meals and the engine regenerates a
+   better plan each week. The app learns from feedback, replaces disliked
+   meals, and improves with every iteration — entirely locally.
+
+4. FREE SOFTWARE — This is free software in the GNU sense. You are free to
+   run, study, share, and modify it. See the GPL v3 license above.
+
+Full GPL v3 license text: https://www.gnu.org/licenses/gpl-3.0.txt
