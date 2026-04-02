@@ -1,5 +1,7 @@
 // NAIM Iteration 2 — Basic color scheme / theme — 5kg
-export const colors = {
+// NAIM Iteration 5 — Dark mode support added — 10kg
+
+export const lightColors = {
   primary: '#C0392B',      // Güç kırmızısı (Naim'in bayrağı)
   primaryDark: '#922B21',
   primaryLight: '#E74C3C',
@@ -7,6 +9,7 @@ export const colors = {
   accent: '#F39C12',       // Altın sarısı (şampiyonluk)
   background: '#F8F9FA',
   surface: '#FFFFFF',
+  surfaceRaised: '#F0F3F6',
   text: {
     primary: '#2C3E50',
     secondary: '#7F8C8D',
@@ -18,6 +21,30 @@ export const colors = {
   warning: '#F39C12',
   error: '#E74C3C',
 };
+
+export const darkColors = {
+  primary: '#E74C3C',
+  primaryDark: '#C0392B',
+  primaryLight: '#FF6B5B',
+  secondary: '#1A252F',
+  accent: '#F39C12',
+  background: '#0D1117',
+  surface: '#161B22',
+  surfaceRaised: '#1C2128',
+  text: {
+    primary: '#E6EDF3',
+    secondary: '#8B949E',
+    inverse: '#FFFFFF',
+    muted: '#484F58',
+  },
+  border: '#21262D',
+  success: '#3FB950',
+  warning: '#D29922',
+  error: '#F85149',
+};
+
+// Default export for backwards compatibility
+export const colors = lightColors;
 
 export const typography = {
   fontSizes: {
